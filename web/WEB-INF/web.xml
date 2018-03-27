@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress ALL -->
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- add servlet -->
+    <!--<display-name>Test</display-name>-->
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloWeb</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWeb</servlet-name>
+        <url-pattern>/helloworld</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>app.servlets.AddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- list servlet -->
+    <servlet>
+        <servlet-name>list</servlet-name>
+        <servlet-class>app.servlets.ListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>speaking</servlet-name>
+        <servlet-class>app.servlets.SpeakServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>speaking</servlet-name>
+        <url-pattern>/speaking</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>showphrase</servlet-name>
+        <servlet-class>app.servlets.ShowPhrasServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>showphrase</servlet-name>
+        <url-pattern>/showphrase</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>words</servlet-name>
+        <servlet-class>app.servlets.WordsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>words</servlet-name>
+        <url-pattern>/words</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>phrases</servlet-name>
+        <servlet-class>app.servlets.PhrasesServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>phrases</servlet-name>
+        <url-pattern>/phrases</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>texts</servlet-name>
+        <servlet-class>app.servlets.TextsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>texts</servlet-name>
+        <url-pattern>/texts</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

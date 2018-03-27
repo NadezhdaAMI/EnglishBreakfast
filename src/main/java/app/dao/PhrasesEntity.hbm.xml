@@ -1,0 +1,18 @@
+<!--<?xml version='1.0' encoding='utf-8'?>-->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="app.dao.PhrasesEntity" table="phrases" schema="myengapp">
+        <id name="idphrases">
+            <column name="idphrases" sql-type="int(255)"/>
+        </id>
+        <property name="rus">
+            <column name="rus" sql-type="varchar(1024)" length="1024"/>
+        </property>
+        <property name="eng">
+            <column name="eng" sql-type="varchar(1024)" length="1024"/>
+        </property>
+    </class>
+</hibernate-mapping>
