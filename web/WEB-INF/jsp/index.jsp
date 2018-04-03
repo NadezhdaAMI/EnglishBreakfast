@@ -65,12 +65,12 @@
             <button class="w3-btn w3-hover-blue w3-round-small" onclick="location.href='/phrases'">PHRASES</button>
             <button class="w3-btn w3-hover-blue w3-round-small" onclick="location.href='/texts'">TEXTS</button>
             <button class="w3-btn w3-hover-blue w3-round-small" onclick="location.href='/audio'">AUDIO</button>
-            <button class="w3-btn w3-hover-blue w3-round-small" onclick="location.href='/helloworld'">LOG IN222</button>
+            <%--<button class="w3-btn w3-hover-blue w3-round-small" onclick="location.href='/helloworld'">LOG IN222</button>--%>
             <button class="w3-btn w3-hover-blue w3-round-small" onclick="location.href='/login'">LOGIN</button>
             <button class="w3-btn w3-hover-blue w3-round-small" onclick="location.href='/loginwow'">LOGINwow</button>
 
         </div>
-        <span style = "float: right; padding-top: 16px; color: #2e6da4">Hello, ${username}!</span>
+        <span style = "float: right; padding-top: 16px; color: #2e6da4">Hello, ${pageContext.request.userPrincipal.name}!</span>
     </div>
 
     <aside style="float: left; width: 220px">

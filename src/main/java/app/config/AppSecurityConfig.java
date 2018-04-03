@@ -27,8 +27,8 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http
                 .authorizeRequests()
-                .antMatchers("/protected/**").access("hasRole('ROLE_ADMIN')")
-                .antMatchers("/confidential/**").access("hasRole('ROLE_SUPERADMIN')")
+//                .antMatchers("/protected/**").access("hasRole('ROLE_ADMIN')")
+//                .antMatchers("/confidential/**").access("hasRole('ROLE_SUPERADMIN')")
                 .antMatchers("/images/**", "/styles/**").permitAll()
 //                .anyRequest().authenticated()
                 .and()
