@@ -43,7 +43,7 @@
 
     </style>
     <title>Title</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles/w3.css">
     <%--<link rel="stylesheet" href="/styles/bootstrap.min.css">--%>
     <script src="http://code.jquery.com/jquery-2.2.4.js" type="text/javascript"></script>
 

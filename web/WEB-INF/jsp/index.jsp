@@ -46,7 +46,7 @@
     <script src="http://code.jquery.com/jquery-2.2.4.js"
             type="text/javascript"></script>
     <script src="/js/app-ajax.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles/w3.css">
 </head>
 
 <body>
