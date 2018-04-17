@@ -19,7 +19,6 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication().withUser("admin").password("admin").roles("ADMIN");
         auth.inMemoryAuthentication().withUser("superadmin").password("superadmin").roles("SUPERADMIN");
 
-
     }
 
     @Override
@@ -30,7 +29,7 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
 //                .antMatchers("/protected/**").access("hasRole('ROLE_ADMIN')")
 //                .antMatchers("/confidential/**").access("hasRole('ROLE_SUPERADMIN')")
                 .antMatchers("/images/**", "/styles/**").permitAll()
-//                .anyRequest().authenticated()
+                .anyRequest().authenticated()
                 .and()
                 .formLogin().loginPage("/login").permitAll()
                 .and()
